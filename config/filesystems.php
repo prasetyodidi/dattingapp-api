@@ -30,6 +30,13 @@ return [
 
     'disks' => [
 
+        'directly_to_public' => [
+            'driver' => 'local',
+            'root' => public_path(),
+            'url' => env('APP_URL').'/',
+            'visibility' => 'public',
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

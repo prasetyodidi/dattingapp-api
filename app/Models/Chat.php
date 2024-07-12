@@ -12,11 +12,11 @@ class Chat extends Model
 
     protected $guarded = [];
 
-    public function receiver() : BelongsTo {
-        return $this->belongsTo(User::class, 'receiver_id', 'id');
+    public function user1() : BelongsTo {
+        return $this->belongsTo(User::class, 'user1_id', 'id');
     }
 
-    public function sender() : BelongsTo {
-        return $this->belongsTo(User::class, 'sender_id', 'id');
+    public function user2() : BelongsTo {
+        return $this->belongsTo(User::class, 'user2_id', 'id');
     }
 }

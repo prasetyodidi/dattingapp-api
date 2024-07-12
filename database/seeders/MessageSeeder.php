@@ -16,18 +16,21 @@ class MessageSeeder extends Seeder
         Message::query()->create([
             'chat_id' => 1,
             'sender_id' => 1,
+            'receiver_id' => 2,
             'message' => 'hello'
         ]);
 
         Message::query()->create([
             'chat_id' => 1,
             'sender_id' => 1,
+            'receiver_id' => 2,
             'message' => 'hai'
         ]);
 
         Message::query()->create([
             'chat_id' => 1,
             'sender_id' => 2,
+            'receiver_id' => 1,
             'message' => 'hai'
         ]);
     }

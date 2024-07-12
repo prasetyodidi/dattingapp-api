@@ -14,20 +14,20 @@ class ChatSeeder extends Seeder
     public function run(): void
     {
         Chat::query()->create([
-            'sender_id' => 1,
-            'receiver_id' => 2,
+            'user1_id' => 1,
+            'user2_id' => 2,
             'last_message' => 'hello dua'
         ]);
 
         Chat::query()->create([
-            'sender_id' => 1,
-            'receiver_id' => 3,
+            'user1_id' => 1,
+            'user2_id' => 3,
             'last_message' => 'hello dua'
         ]);
 
         Chat::query()->create([
-            'sender_id' => 2,
-            'receiver_id' => 3,
+            'user1_id' => 2,
+            'user2_id' => 3,
             'last_message' => 'hello dua'
         ]);
     }
